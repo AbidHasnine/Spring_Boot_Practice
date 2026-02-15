@@ -51,7 +51,7 @@
             text-decoration: none;
             border-radius: 3px;
             font-size: 16px;
-            
+            transition: background 0.3s;
         }
 
         a:hover {
@@ -66,9 +66,6 @@
         <p>Hello! Thanks for visiting our application. Get started by logging in or signing up below.</p>
         <div>Name: ${name}</div>
         <div>Password: ******</div>
-		<div>
-			<a href="list-todos" >Manage Your Todos</a>
-		</div>
     </div>
 </body>
 
