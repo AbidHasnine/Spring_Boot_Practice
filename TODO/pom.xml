@@ -61,6 +61,11 @@ Maven uses this file to manage the project's dependencies, build process, and ot
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
 		<!-- 
 		Spring Boot starter for using Java's Bean Validation with a default provider.
 		-->
