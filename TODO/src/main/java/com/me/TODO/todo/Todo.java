@@ -2,6 +2,9 @@ package com.me.TODO.todo;
 
 import java.time.LocalDate;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import jakarta.validation.constraints.Size;
 
 /**
@@ -9,8 +12,12 @@ import jakarta.validation.constraints.Size;
  * It is a simple Plain Old Java Object (POJO) that holds the data for a single todo.
  * This is sometimes referred to as a "model" or "bean".
  */
+
+@Entity
 public class Todo {
 
+	@Id
+	@GeneratedValue
 	private int id;
 	private String username;
 

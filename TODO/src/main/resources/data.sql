@@ -1,0 +1,32 @@
+INSERT INTO todo(ID,USERNAME,DESCRIPTION,TARGETDATE,DONE)
+VALUES(1001,'Udemy','Get CompTIA Certified',CURRENT_DATE(),false);
+
+INSERT INTO todo(ID,USERNAME,DESCRIPTION,TARGETDATE,DONE)
+VALUES(1002,'Tuhin','Complete Spring Boot CRUD project',CURRENT_DATE(),false);
+
+INSERT INTO todo(ID,USERNAME,DESCRIPTION,TARGETDATE,DONE)
+VALUES(1003,'Alex','Finish reading Clean Code book',CURRENT_DATE(),false);
+
+INSERT INTO todo(ID,USERNAME,DESCRIPTION,TARGETDATE,DONE)
+VALUES(1004,'Sara','Practice JWT authentication implementation',CURRENT_DATE(),true);
+
+INSERT INTO todo(ID,USERNAME,DESCRIPTION,TARGETDATE,DONE)
+VALUES(1005,'Rahim','Prepare database schema for blog project',CURRENT_DATE(),false);
+
+INSERT INTO todo(ID,USERNAME,DESCRIPTION,TARGETDATE,DONE)
+VALUES(1006,'John','Deploy Spring Boot app to cloud',CURRENT_DATE(),false);
+
+INSERT INTO todo(ID,USERNAME,DESCRIPTION,TARGETDATE,DONE)
+VALUES(1007,'Nusrat','Implement pagination and sorting',CURRENT_DATE(),true);
+
+INSERT INTO todo(ID,USERNAME,DESCRIPTION,TARGETDATE,DONE)
+VALUES(1008,'Michael','Write unit tests for service layer',CURRENT_DATE(),false);
+
+INSERT INTO todo(ID,USERNAME,DESCRIPTION,TARGETDATE,DONE)
+VALUES(1009,'Anika','Refactor controller exception handling',CURRENT_DATE(),false);
+
+INSERT INTO todo(ID,USERNAME,DESCRIPTION,TARGETDATE,DONE)
+VALUES(1010,'David','Study Spring Security filters',CURRENT_DATE(),true);
+
+INSERT INTO todo(ID,USERNAME,DESCRIPTION,TARGETDATE,DONE)
+VALUES(1011,'Emily','Optimize JPA queries performance',CURRENT_DATE(),false);
