@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ include file="common/header.jspf" %>
 <%@ include file="common/navigation.jspf" %>
 
@@ -8,9 +9,10 @@
         The form:form tag creates an HTML form.
         The modelAttribute="todo" attribute binds this form to the "todo" object in the model.
         This enables two-way data binding.
-        The action="add-todo" attribute specifies that the form should be submitted to the "/add-todo" URL via a POST request.
+        The The 'action' attribute is dynamically set based on whether it's an add or update operation.
     --%>
-    <form:form modelAttribute="todo" action="add-todo" method="post">
+    <c:url var="formAction" value="${(todo.id == 0) ? '/add-todo' : '/update-todo'}" />
+    <form:form modelAttribute="todo" action="${formAction}" method="post">
         <div class="mb-3">
             <label for="description" class="form-label">Description</label>
             <%--
@@ -38,7 +40,7 @@
             These are hidden input fields used to submit values that are not directly entered by the user.
         --%>
         <form:input path="done" type="hidden" value="false" />
-        <form:input path="id" type="hidden" value="0" />
+        <form:input path="id" type="hidden" />
         <button type="submit" class="btn btn-success">Add Todo</button>
     </form:form>
 </div>

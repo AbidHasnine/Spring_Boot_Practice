@@ -27,6 +27,7 @@ public class TodoControllerJpa {
 		this.todoRepository = todoRepository;
 	}
 
+	
 	private TodoRepository todoRepository;
 
 	
