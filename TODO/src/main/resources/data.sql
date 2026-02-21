@@ -1,32 +1,32 @@
-INSERT INTO todo(ID,USERNAME,DESCRIPTION,TARGETDATE,DONE)
-VALUES(1001,'Admin','Get CompTIA Certified',CURRENT_DATE(),false);
+INSERT INTO todo(USERNAME,DESCRIPTION,TARGETDATE,DONE)
+VALUES('Admin','Get CompTIA Certified',CURRENT_DATE(),false);
 
-INSERT INTO todo(ID,USERNAME,DESCRIPTION,TARGETDATE,DONE)
-VALUES(1002,'Admin','Complete Spring Boot CRUD project',CURRENT_DATE(),false);
+INSERT INTO todo(USERNAME,DESCRIPTION,TARGETDATE,DONE)
+VALUES('Admin','Complete Spring Boot CRUD project',CURRENT_DATE(),false);
 
-INSERT INTO todo(ID,USERNAME,DESCRIPTION,TARGETDATE,DONE)
-VALUES(1003,'Admin','Finish reading Clean Code book',CURRENT_DATE(),false);
+INSERT INTO todo(USERNAME,DESCRIPTION,TARGETDATE,DONE)
+VALUES('Admin','Finish reading Clean Code book',CURRENT_DATE(),false);
 
-INSERT INTO todo(ID,USERNAME,DESCRIPTION,TARGETDATE,DONE)
-VALUES(1004,'Admin','Practice JWT authentication implementation',CURRENT_DATE(),true);
+INSERT INTO todo(USERNAME,DESCRIPTION,TARGETDATE,DONE)
+VALUES('Admin','Practice JWT authentication implementation',CURRENT_DATE(),true);
 
-INSERT INTO todo(ID,USERNAME,DESCRIPTION,TARGETDATE,DONE)
-VALUES(1005,'Admin','Prepare database schema for blog project',CURRENT_DATE(),false);
+INSERT INTO todo(USERNAME,DESCRIPTION,TARGETDATE,DONE)
+VALUES('Admin','Prepare database schema for blog project',CURRENT_DATE(),false);
 
-INSERT INTO todo(ID,USERNAME,DESCRIPTION,TARGETDATE,DONE)
-VALUES(1006,'Admin','Deploy Spring Boot app to cloud',CURRENT_DATE(),false);
+INSERT INTO todo(USERNAME,DESCRIPTION,TARGETDATE,DONE)
+VALUES('Admin','Deploy Spring Boot app to cloud',CURRENT_DATE(),false);
 
-INSERT INTO todo(ID,USERNAME,DESCRIPTION,TARGETDATE,DONE)
-VALUES(1007,'Admin','Implement pagination and sorting',CURRENT_DATE(),true);
+INSERT INTO todo(USERNAME,DESCRIPTION,TARGETDATE,DONE)
+VALUES('Admin','Implement pagination and sorting',CURRENT_DATE(),true);
 
-INSERT INTO todo(ID,USERNAME,DESCRIPTION,TARGETDATE,DONE)
-VALUES(1008,'Admin','Write unit tests for service layer',CURRENT_DATE(),false);
+INSERT INTO todo(USERNAME,DESCRIPTION,TARGETDATE,DONE)
+VALUES('Admin','Write unit tests for service layer',CURRENT_DATE(),false);
 
-INSERT INTO todo(ID,USERNAME,DESCRIPTION,TARGETDATE,DONE)
-VALUES(1009,'Admin','Refactor controller exception handling',CURRENT_DATE(),false);
+INSERT INTO todo(USERNAME,DESCRIPTION,TARGETDATE,DONE)
+VALUES('Admin','Refactor controller exception handling',CURRENT_DATE(),false);
 
-INSERT INTO todo(ID,USERNAME,DESCRIPTION,TARGETDATE,DONE)
-VALUES(1010,'Admin','Study Spring Security filters',CURRENT_DATE(),true);
+INSERT INTO todo(USERNAME,DESCRIPTION,TARGETDATE,DONE)
+VALUES('Admin','Study Spring Security filters',CURRENT_DATE(),true);
 
-INSERT INTO todo(ID,USERNAME,DESCRIPTION,TARGETDATE,DONE)
-VALUES(1011,'Admin','Optimize JPA queries performance',CURRENT_DATE(),false);
+INSERT INTO todo(USERNAME,DESCRIPTION,TARGETDATE,DONE)
+VALUES('Admin','Optimize JPA queries performance',CURRENT_DATE(),false);
