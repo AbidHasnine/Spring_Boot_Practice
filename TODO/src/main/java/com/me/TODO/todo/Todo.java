@@ -29,9 +29,13 @@ public class Todo {
 	 */
 	@Size(min = 10, message = "Enter atleast 10 characters")
 	private String description;
-	
 	private LocalDate targetdate;
 	private boolean done;
+
+	
+
+	public Todo() {
+	}
 
 	/**
 	 * Constructor to create a new Todo object.

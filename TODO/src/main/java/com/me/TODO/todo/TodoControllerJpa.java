@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 import org.springframework.security.core.context.SecurityContextHolder;
-//import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,21 +20,25 @@ import jakarta.validation.Valid;
  * The @SessionAttributes("name") annotation keeps the "name" attribute in the
  * session.
  */
-//@Controller
+@Controller
 @SessionAttributes("name")
-public class TodoController {
+public class TodoControllerJpa {
 
-	private TodoService todoService;
 
 	/**
 	 * Constructor for TodoController, with dependency injection of TodoService.
 	 * 
 	 * @param todoService The service for managing todos.
 	 */
-	public TodoController(TodoService todoService) {
+	public TodoControllerJpa(TodoService todoService,TodoRepository todoRepository) {
 		super();
 		this.todoService = todoService;
+		this.todoRepository = todoRepository;
 	}
+
+	private TodoService todoService;
+
+	private TodoRepository todoRepository;
 
 	/**
 	 * Handles requests to "/list-todos".
@@ -48,7 +52,7 @@ public class TodoController {
 	public String listAllTodos(ModelMap model) {
 
 		String username = getLoginUserName(model);
-		List<Todo> todos = todoService.findByUsername(username);
+		List<Todo> todos = todoRepository.findByUsername(username);
 		model.addAttribute("todos", todos);
 
 		return "listTodos";
